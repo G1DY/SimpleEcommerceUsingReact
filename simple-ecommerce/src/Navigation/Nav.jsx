@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <nav>
         <div className="nav-container">
-            <input className='search-input' type="text" name='search' placeholder='search' />
+            <input className='input' type="text" name='search' placeholder='search' />
         </div>
         <div className="profile-container">
             <a href="">
