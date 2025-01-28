@@ -3,7 +3,10 @@
     flex-wrap: wrap;
     margin-left: 20rem;
     margin-top: 2rem;
-    z-index: -2;
+    padding: 20px;
+    z-index: -1;
+    gap: 20px;
+    justify-content: center;
   }
   
   .card {
@@ -11,11 +14,17 @@
     border: 2px solid #ededed;
     padding: 20px;
     cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    height: auto;
+    /* border-radius: 10px; */
+    /* text-align: center; */
   }
   
   .card-img {
-    width: 10rem;
+    width: 100%;
     margin-bottom: 1rem;
+    display: flex;
   }
   
   .card-title {
@@ -24,10 +33,10 @@
   
   .card-reviews {
     margin-bottom: 1rem;
-    text-align: center;
+    margin-top: 1rem;
   }
   
-  .rating-star {
+  .ratings-star {
     color: #d5ab55;
   }
   
