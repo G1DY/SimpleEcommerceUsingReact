@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Categories.css"
+import Input from '../../Components/Input'
 
 const Categories = ({handleChange}) => {
   return (
@@ -10,10 +11,10 @@ const Categories = ({handleChange}) => {
           <input type="radio" value="" name='categories' onChange={handleChange} />
           <span className="checkmark"></span>All
         </label>
-        <input onChange={handleChange} value="flats" title='Flats' name='categories'/>
-        <input onChange={handleChange} value="sneakers" title='Sneakers' name='categories'/>
-        <input onChange={handleChange} value="sandals" title='Sandals' name='categories'/>
-        <input onChange={handleChange} value="heels" title='Heels' name='categories'/>
+        <Input onChange={handleChange} value="flats" title='Flats' name='categories'/>
+        <Input onChange={handleChange} value="sneakers" title='Sneakers' name='categories'/>
+        <Input onChange={handleChange} value="sandals" title='Sandals' name='categories'/>
+        <Input onChange={handleChange} value="heels" title='Heels' name='categories'/>
       </div>
     </div>
   )
