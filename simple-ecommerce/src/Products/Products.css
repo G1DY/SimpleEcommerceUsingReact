@@ -14,7 +14,8 @@
     border: 2px solid #ededed;
     padding: 0 20px;
     cursor: pointer;
-    width: 250px;
+    width: 200px;
+    height: 100px;
     overflow: hidden;
     height: auto;
     /* border-radius: 10px; */
