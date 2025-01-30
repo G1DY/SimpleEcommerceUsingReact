@@ -9,10 +9,9 @@ import Card from './Components/Card'
 
 const App = () => {
   const [selectedcategory, setSelectedCategory] = useState(null)
-
+  const [query, setQuery] = useState('');
 
   // input filter
-  const [query, setQuery] = useState('');
   const handleInputChange = (e) => {
     setQuery(e.target.value)
   }
@@ -31,7 +30,7 @@ const App = () => {
   }
 
   // filtereddata
-  const filtereddata = (data, selected, query) => {
+  const filteredData = (data, selected, query) => {
     let filtereddata = data;
 
     if (query) {
@@ -39,17 +38,17 @@ const App = () => {
     }
     if (selected) {
       filtereddata = filtereddata.filter(({category, color, company, newPrice, title}) => 
-      category === selected || color === selected || company === selected || newPrice === selected || title === selected);
+      (category === selected || color === selected || company === selected || newPrice === selected || title === selected));
     }
-    return filtereddata.map(({img, title, star, reviews, prevPrice, newPrice}) => (<Card key={Math.random()} img={img} title={title} star={star} reviews={reviews} prevPrice={prevPrice} newPrice={newPrice}/>))
+    return filtereddata.map(({img, title, star, reviews, prevPrice, newPrice}) => (<Card key={Math.random()} img={img} title={title} star={star} reviews={reviews} prevPrice={prevPrice} newPrice={newPrice}/>));
   };
 
-  const result = filtereddata(data, selectedcategory, query);
+  const result = filteredData(data, selectedcategory, query);
   return (
     <>
     <Sidebar handleChange={handleChange} />
     <Navigation query={query} handleInputChange={handleInputChange} />
-    <Recommended handleClick={handleClick}/>
+    <Recommended handleChange={handleChange}/>
     <Products result={result}/>
     </>
     

@@ -5,6 +5,7 @@ import Prices from './Prices/Prices'
 import Colors from './Colors/Colors'
 
 const Sidebar = ({handleChange}) => {
+  console.log(handleChange)
   return (
     <>
     <section className="sidebar">

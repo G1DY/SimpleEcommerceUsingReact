@@ -18,7 +18,7 @@
     height: 100px;
     overflow: hidden;
     height: auto;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     /* text-align: center; */
   }
   
@@ -35,21 +35,25 @@
   .card-reviews {
     margin-bottom: 1rem;
     margin-top: 1rem;
+    display: flex;
+    font-size: 0.9rem;
+    color: #fff;
   }
   
-  .ratings-star {
+  .star {
     color: #d5ab55;
   }
   
   .card-reviews {
     font-size: 0.9rem;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   
   .card-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
   .price {
     display: flex;
