@@ -18,7 +18,7 @@ const Colors = ({handleChange}) => {
     <Input handleChange={handleChange} value="green" title='Green' name='colors' color='green'/>
 
       <label className="sidebar-label-container">
-        <input type="radio" onChange={handleChange} value="White" name='colors' />
+        <input type="radio" onChange={handleChange} title='White' value="white" name='colors' />
         <span className="checkmark" style={{ background: "white", border: "2px solid black" }}></span>
         White
       </label>
