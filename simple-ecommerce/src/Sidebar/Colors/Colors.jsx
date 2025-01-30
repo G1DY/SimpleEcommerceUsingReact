@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Colors.css"
+import Input from '../../Components/Input'
 
 const Colors = ({handleChange}) => {
   return (
