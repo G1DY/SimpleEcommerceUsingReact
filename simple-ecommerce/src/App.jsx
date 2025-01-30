@@ -26,7 +26,7 @@ const App = () => {
 
   // Button filtering
   const handleClick = (e) => {
-    selectedcategory(e.target.value)
+    setSelectedCategory(e.target.value)
   }
 
   // filtereddata
@@ -48,7 +48,7 @@ const App = () => {
     <>
     <Sidebar handleChange={handleChange} />
     <Navigation query={query} handleInputChange={handleInputChange} />
-    <Recommended handleChange={handleChange}/>
+    <Recommended handleClick={handleClick}/>
     <Products result={result}/>
     </>
     
